@@ -1,0 +1,608 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: arial,sans-serif ;
+    background-color: #e4e4e4;
+}
+
+header {
+    width: 100vh;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
+}
+
+img {
+    margin-top: 4px;
+    height: 12px;
+}
+
+#logo1 {
+    height: 30px;
+}
+
+#header #head1 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #131921;
+    color: white;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+#head1 #logo {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 12px;
+    padding: 8px;
+    padding-top: 5px;
+    padding-right: 6px;
+    width: 135px;
+}
+
+#head1 #logo span {
+    font-size: 14px;
+    position: relative;
+    bottom: 14px;
+    left: -3px;
+}
+
+#head1 #location {
+    width: 220px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#head1 #location #location_acc {
+    color: white;
+    opacity: 0.8;
+    font-size: 12px;
+    position: relative;
+    left: 25px;
+    top: 5px;
+}
+
+#head1 #location #update_loc {
+    position: relative;
+    bottom: 5px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+#head1 #location #loc {
+    font-size: 20px;
+    position: relative;
+    left: 4px;
+    bottom: 3px;
+}
+
+#head1 #search {
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 680px;
+    border-radius: 8px;
+    margin: 10px 15px 10px 15px;
+}
+
+#head1 #search label {
+    width: 55px;
+    border-radius: 5px 0 0 5px;
+    border: none; 
+    background-color: #e4e4e4;
+    color: #616161;
+    text-align: center;
+    font-size: 12px;
+    border-right: 1px solid #99999991;
+}
+
+#head1 #search #drop {
+    position: relative;
+    top: 13px;
+}
+
+#head1 #search i {
+    position: relative;
+    top: 12px;
+    margin-left: 6px;
+}
+
+#head1 #search input:focus {
+    outline: none;
+}
+
+#head1 #search input {
+   flex-grow: 1;
+   border: none;
+}
+
+#head1 #search input::placeholder {
+    font-size: 15px;
+    position: relative;
+    left: 10px;
+}
+
+#head1 #search button {
+    width: 45px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color: rgb(228, 181, 95);
+}
+
+#head1 #search button #search_icon {
+    font-size: 30px;
+    color: rgb(48, 48, 48);
+}
+
+#head1 #language {
+    padding-top: 17px;
+    width: 80px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#head1 #signin {
+    padding: 5px 0 5px 5px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 148px;
+}
+
+#head1 #signin #hello {
+    color: white;
+    opacity: 0.8;
+    font-size: 12px;
+}
+
+#head1 #ro {
+    padding: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 70px;
+}
+
+#head1 #ro #returns {
+    color: white;
+    opacity: 0.8;
+    font-size: 12px;
+}
+
+#head1 #ro span {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#head1 #cart {
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 12px;
+    width: 75px;
+    padding: 8px;
+    padding-bottom: 10px;
+}
+
+#head1 #cart #clogo {
+    position: relative;
+    top: -3px;
+    right: -5px;
+    font-size: 30px;
+}
+
+#head1 #cart #car {
+    position: relative;
+    bottom: 8px;
+}
+
+#head1 > div:hover {
+    border: 0.6px solid white;
+    border-radius: 2px;
+}
+
+#head1 #search:hover {
+    outline: 3px solid orange;
+}
+
+#head1 #search button:hover {
+    background-color: rgb(250, 171, 24);
+}
+
+#head1 #search label:hover {
+    color: black;
+    background-color: #cccccc;
+}
+
+#head2 {
+    display: flex;
+    background-color: #232f3e;
+    color: white;
+    height: 42px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+}
+
+#head2 > div {
+    padding: 12px 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#head2 #menu {
+    margin-left: 10px;
+}
+
+#head2 #menu #menu_logo {
+    position: relative;
+    bottom: 3px;
+}
+
+#head2 #menu #all {
+    position: relative;
+    bottom: 10px;
+    font-weight: 600;
+}
+
+#head2 > div:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+main #offers {
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100px;
+    background-image: url(photo6.jpg);
+    background-size: cover;
+}
+
+main #containor {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+    top: 270px;
+    width: 100%;
+}
+
+main #containor .con1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 445px;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    width: 100%;
+}
+
+main #containor .con1 > div {
+    width: 23%;
+    height: 420px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+main #containor .con1 .sub1 .off_head {
+    font-size: 21px;
+    font-weight: 700;
+    color: #0f1111;
+    padding: 20px;
+}
+
+main #containor .con1 .sub1 .off_head_photos {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    column-gap: 15px;
+}
+
+main #containor .con1 .sub1 .off_head_photos img {
+    height: 90px;
+    width: 128px;
+}
+
+main #containor .con1 .sub1 .off_head_photos figcaption {
+    font-size: 12px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+main #containor .con1 .sub1 .off_head_photos a {
+    font-size: 12px;
+    color: #008a8a;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+}
+
+main #containor .con1 .sub1 .off_head_photos a:hover {
+    color: #fd4f30;
+    text-decoration: underline;
+}
+
+main .line_ads {
+    position: absolute;
+    top: 1270px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 362px;
+    width: 96.8%;
+    margin: 0 20px 20px 20px;
+}
+
+main .line_ads .mobile_heading {
+    font-size: 21px;
+    color: #0f1111;
+    background-color: white;
+    font-weight: 700;
+    padding: 20px 20px 10px 20px
+}
+
+main .line_ads .mobile_heading a {
+    font-size: 12px;
+    color: #008a8a;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+main .line_ads .mobile_heading a:hover {
+    color: #fd4f30;
+    text-decoration: underline;
+}
+
+main .line_ads .phones_containor {
+    display: flex;
+    width: 100%;
+    height: 306px;
+}
+
+main .line_ads .phones_containor .phones {
+    flex-basis: 100%;
+    background-color: white;
+}
+
+main .line_ads .phones_containor .phones figure img {
+    height: 180px;
+    position: relative;
+    top: 25px;
+    left: 55px;
+}
+
+main .line_ads .phones_containor .phones figure figcaption {
+    position: relative;
+    top: 40px;
+    padding-left: 20px;
+    line-height: 25px;
+}
+
+main .line_ads .phones_containor .phones figure figcaption .phones_offer {
+    background-color: #cc0c39;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 2px;
+    word-spacing: 2px;
+}
+
+main .line_ads .phones_containor .phones figure figcaption .second_offers {
+    color: #cc0c39;
+    font-size: 12px;
+    margin: 10px;
+    font-weight: 600;
+}
+
+main .line_ads .phones_containor .phones figure figcaption .phones_name {
+    color: #0f1111;
+    font-size: 13px;
+}
+
+main .line_ads2 {
+    position: absolute;
+    top: 1654px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 96.8%;
+    margin: 0 20px 20px 20px;
+    background-color: white;
+}
+
+main .line_ads2 .bike_heading {
+    font-size: 21px;
+    color: #0f1111;
+    background-color: white;
+    font-weight: 700;
+    padding: 20px 20px 10px 20px
+}
+
+main .line_ads2 .bike_heading a {
+    font-size: 12px;
+    color: #008a8a;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+main .line_ads2 .bike_heading a:hover {
+    color: #fd4f30;
+    text-decoration: underline;
+}
+
+main .line_ads2 #bikes {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+}
+
+main .line_ads2 #bikes div img {
+    height: 100%;
+}
+
+main #back_to_top {
+    width: 100%;
+    background-color: #2f3e50;
+    height: 50px;
+    position: absolute;
+    top: 2000px;
+    text-align: center;
+}
+
+main #back_to_top:hover {
+    background-color: #2f3e50e1;
+}
+
+main #back_to_top a {
+    position: relative;
+    top: 15px;
+    color: white;
+    font-weight: 300;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+footer {
+ height: 490px;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ position: absolute;
+ top: 2050px;
+ background-color: #232f3e;
+ align-items: center;
+}
+
+footer #foot_main {
+    height: 336px;
+    width: 953px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer #foot_main .footer_menu {
+    padding-top: 40px;
+    
+}
+
+footer #foot_main .space {
+    width: 112px;
+}
+
+footer #foot_main .footer_menu ul li {
+    list-style: none;
+    color: #DDDDDD;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+footer #foot_main .footer_menu ul li:hover {
+    text-decoration: underline;
+}
+
+footer #foot_main .footer_menu ul #top {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: #ffffff25;
+    width: 100%;
+}
+
+footer #foot_down {
+    display: flex;
+    flex-direction: column;
+    width: 953px;
+    height: 154px;
+    align-items: center;
+}
+
+footer #foot_down #footer_logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    height: 35px;
+    margin-top: 30px;
+}
+
+footer #foot_down img{
+    height: 25px;
+    padding-top: 3px;
+}
+
+footer #foot_down button {
+    background-color: inherit;
+    border: none;
+    border: 1px solid #ffffff63;
+    border-radius: 2px;
+    width: 120px;
+    height: 35px;
+    color: white;
+}
+
+footer #foot_down button #web {
+    position: relative;
+    left: -14px;
+    top: 2px;
+    font-size: 17px;
+}
+
+footer #foot_down button #english {
+    position: relative;
+    left: -7px;
+    bottom: 1px;
+}
+
+footer #foot_down button #english i {
+    position: relative;
+    left: 15px;
+}
+
+footer #foot_down #footer_country {
+    width: 900px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer #foot_down #footer_country ul li {
+    display: inline;
+    color: #DDDDDD;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+footer #foot_down #footer_country ul li:hover{
+    text-decoration: underline;
+}
+
+@media (min-width:1500px) {
+    main #containor .con1 .sub1 .off_head_photos {
+        column-gap: 50px;
+    }
+}
