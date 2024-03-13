@@ -233,7 +233,7 @@ img {
     color: white;
     height: 42px;
     width: 100%;
-    position: absolute;
+    position: relative;
     z-index: 1;
     top: 60px;
 }
@@ -266,11 +266,11 @@ img {
 
 main #offers {
     width: 100%;
-    height: 90%;
+    height: 90vh;
     margin: 0;
     padding: 0;
-    position: absolute;
-    top: 100px;
+    /* position: relative;
+    top: 100px; */
     background-image: url(photo6.jpg);
     background-size: cover;
 }
@@ -280,7 +280,7 @@ main #containor {
     flex-direction: column;
     margin: 0;
     position: relative;
-    top: 270px;
+    top: -300px;
     width: 100%;
 }
 
@@ -314,6 +314,7 @@ main #containor .con1 .sub1 .off_head_photos {
     flex-wrap: wrap;
     padding-left: 20px;
     column-gap: 15px;
+    flex-wrap: wrap;
 }
 
 main #containor .con1 .sub1 .off_head_photos img {
@@ -341,8 +342,8 @@ main #containor .con1 .sub1 .off_head_photos a:hover {
 }
 
 main .line_ads {
-    position: absolute;
-    top: 1270px;
+    /* position: relative; */
+    /* top: 1270px; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -418,8 +419,8 @@ main .line_ads .phones_containor .phones figure figcaption .phones_name {
 }
 
 main .line_ads2 {
-    position: absolute;
-    top: 1654px;
+    /* position: absolute;
+    top: 1654px; */
     display: flex;
     flex-direction: column;
     height: 300px;
@@ -462,8 +463,8 @@ main #back_to_top {
     width: 100%;
     background-color: #2f3e50;
     height: 50px;
-    position: absolute;
-    top: 2000px;
+    /* position: absolute;
+    top: 2000px; */
     text-align: center;
 }
 
@@ -485,8 +486,8 @@ footer {
  width: 100%;
  display: flex;
  flex-direction: column;
- position: absolute;
- top: 2050px;
+ /* position: absolute;
+ top: 2050px; */
  background-color: #232f3e;
  align-items: center;
 }
