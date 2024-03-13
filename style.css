@@ -6,10 +6,11 @@
 body {
     font-family: arial,sans-serif ;
     background-color: #e4e4e4;
+    width: 100%;
 }
 
 header {
-    width: 100vh;
+    width: 100%;
 }
 
 #header {
@@ -265,7 +266,7 @@ img {
 
 main #offers {
     width: 100%;
-    height: 90vh;
+    height: 90%;
     margin: 0;
     padding: 0;
     position: absolute;
@@ -299,7 +300,6 @@ main #containor .con1 > div {
     background-color: white;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 main #containor .con1 .sub1 .off_head {
@@ -422,7 +422,6 @@ main .line_ads2 {
     top: 1654px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     height: 300px;
     width: 96.8%;
     margin: 0 20px 20px 20px;
@@ -452,7 +451,6 @@ main .line_ads2 .bike_heading a:hover {
 main .line_ads2 #bikes {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: space-around;
 }
 
