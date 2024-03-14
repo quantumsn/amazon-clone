@@ -466,7 +466,7 @@ main .line_ads2 #bikes_containor #bikes {
 }
 
 main .line_ads2 #bikes_containor #bikes figure img {
-    height: 180px;
+    height: 100%;
     position: relative;
 }
 
