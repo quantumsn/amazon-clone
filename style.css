@@ -234,7 +234,6 @@ img {
 #head2 {
     display: flex;
     background-color: #232f3e;
-    flex-wrap: wrap;
     color: white;
     height: 42px;
     width: 100%;
