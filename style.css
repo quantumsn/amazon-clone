@@ -1,16 +1,16 @@
-html {
+html,css {
+    font-family: arial,sans-serif ;
+    background-color: #e4e4e4;
     width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 *{
     padding: 0;
     margin: 0;
-}
-
-body {
-    font-family: arial,sans-serif ;
-    background-color: #e4e4e4;
-    width: 100%;
 }
 
 header {
@@ -36,7 +36,6 @@ img {
 #header #head1 {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
     background-color: #131921;
     color: white;
     height: 60px;
@@ -278,8 +277,8 @@ main #offers {
     padding: 0;
     /* position: relative;
     top: 100px; */
-    background-image: url(photo6.jpg);
-    background-size: cover;
+/*     background-image: url(photo6.jpg);
+    background-size: cover; */
 }
 
 main #containor {
@@ -383,7 +382,6 @@ main .line_ads .phones_containor {
     display: flex;
     width: 100%;
     height: 306px;
-    flex-wrap: wrap;
 }
 
 main .line_ads .phones_containor .phones {
