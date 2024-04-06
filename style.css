@@ -11,7 +11,6 @@ html,body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    box-sizing: border-box;
 }
 
 header {
@@ -23,6 +22,7 @@ header {
     flex-direction: column;
     height: 100px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 img {
@@ -67,7 +67,6 @@ img {
     width: 220px;
     margin-top: 8px;
     margin-bottom: 8px;
-    box-sizing: border-box;
 }
 
 #head1 #location #location_acc {
@@ -76,7 +75,6 @@ img {
     position: relative;
     left: 25px;
     top: 4px;
-    box-sizing: border-box;
 }
 
 #head1 #location #update_loc {
@@ -84,7 +82,6 @@ img {
     bottom: 4px;
     font-size: 14px;
     font-weight: 600;
-    box-sizing: border-box;
 }
 
 #head1 #location #loc {
@@ -92,7 +89,6 @@ img {
     position: relative;
     left: 4px;
     bottom: 3px;
-    box-sizing: border-box;
 }
 
 #head1 #search {
@@ -102,7 +98,6 @@ img {
     width: 680px;
     border-radius: 8px;
     margin: 10px 15px 10px 15px;
-    box-sizing: border-box;
 }
 
 #head1 #search label {
@@ -114,20 +109,17 @@ img {
     text-align: center;
     font-size: 12px;
     border-right: 1px solid #99999991;
-    box-sizing: border-box;
 }
 
 #head1 #search #drop {
     position: relative;
     top: 13px;
-    box-sizing: border-box;
 }
 
 #head1 #search i {
     position: relative;
     top: 12px;
     margin-left: 6px;
-    box-sizing: border-box;
 }
 
 #head1 #search input:focus {
@@ -138,7 +130,6 @@ img {
    flex-grow: 1;
    border: none;
    padding-left: 10px;
-   box-sizing: border-box;
 }
 
 #head1 #search input::placeholder {
@@ -151,12 +142,12 @@ img {
     width: 45px;
     border-radius: 0 5px 5px 0;
     border: none;
-    background-color: rgb(228, 181, 95);
+    background-color: #e4b55f;
 }
 
 #head1 #search button #search_icon {
     font-size: 30px;
-    color: rgb(48, 48, 48);
+    color: #303030;
 }
 
 #head1 #language {
@@ -224,7 +215,7 @@ img {
 }
 
 #head1 > div:hover {
-    border: 0.6px solid white;
+    outline: 0.6px solid white;
     border-radius: 2px;
 }
 
@@ -249,12 +240,17 @@ img {
     width: 100%;
     position: relative;
     top: 60px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    box-sizing: border-box;
 }
 
 #head2 > div {
-    padding: 12px 8px;
+    padding: 12px 8px 12px 8px;
     font-size: 14px;
     font-weight: 500;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
 #head2 #menu {
@@ -273,7 +269,9 @@ img {
 }
 
 #head2 > div:hover {
-    border: 1px solid white;
+    /* border: 1px solid white;
+    border-radius: 2px; */
+    outline: 1px solid white;
     border-radius: 2px;
 }
 
