@@ -3,13 +3,19 @@
     margin: 0;
 }
 
-body {
-    font-family: arial,sans-serif ;
+html,body {
+    font-family: 'Amazon-Ember' ;
     background-color: #e4e4e4;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 header {
-    width: 100vh;
+    width: 100%;
 }
 
 #header {
@@ -28,7 +34,7 @@ img {
     height: 30px;
 }
 
-#header #head1 {
+#head1 {
     display: flex;
     justify-content: space-evenly;
     background-color: #131921;
@@ -36,7 +42,8 @@ img {
     height: 60px;
     width: 100%;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
+    box-sizing: border-box;
 }
 
 #head1 #logo {
@@ -60,22 +67,24 @@ img {
     width: 220px;
     margin-top: 8px;
     margin-bottom: 8px;
+    box-sizing: border-box;
 }
 
 #head1 #location #location_acc {
-    color: white;
-    opacity: 0.8;
+    color: #ffffffb2;
     font-size: 12px;
     position: relative;
     left: 25px;
-    top: 5px;
+    top: 4px;
+    box-sizing: border-box;
 }
 
 #head1 #location #update_loc {
     position: relative;
-    bottom: 5px;
-    font-size: 13px;
-    font-weight: 800;
+    bottom: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    box-sizing: border-box;
 }
 
 #head1 #location #loc {
@@ -83,6 +92,7 @@ img {
     position: relative;
     left: 4px;
     bottom: 3px;
+    box-sizing: border-box;
 }
 
 #head1 #search {
@@ -92,6 +102,7 @@ img {
     width: 680px;
     border-radius: 8px;
     margin: 10px 15px 10px 15px;
+    box-sizing: border-box;
 }
 
 #head1 #search label {
@@ -103,17 +114,20 @@ img {
     text-align: center;
     font-size: 12px;
     border-right: 1px solid #99999991;
+    box-sizing: border-box;
 }
 
 #head1 #search #drop {
     position: relative;
     top: 13px;
+    box-sizing: border-box;
 }
 
 #head1 #search i {
     position: relative;
     top: 12px;
     margin-left: 6px;
+    box-sizing: border-box;
 }
 
 #head1 #search input:focus {
@@ -123,6 +137,8 @@ img {
 #head1 #search input {
    flex-grow: 1;
    border: none;
+   padding-left: 10px;
+   box-sizing: border-box;
 }
 
 #head1 #search input::placeholder {
@@ -156,7 +172,7 @@ img {
 #head1 #signin {
     padding: 5px 0 5px 5px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: bold;
     margin-top: 8px;
     margin-bottom: 8px;
     width: 148px;
@@ -164,8 +180,8 @@ img {
 
 #head1 #signin #hello {
     color: white;
-    opacity: 0.8;
     font-size: 12px;
+    font-weight: 300;
 }
 
 #head1 #ro {
@@ -177,7 +193,6 @@ img {
 
 #head1 #ro #returns {
     color: white;
-    opacity: 0.8;
     font-size: 12px;
 }
 
@@ -232,8 +247,7 @@ img {
     color: white;
     height: 42px;
     width: 100%;
-    position: absolute;
-    z-index: 1;
+    position: relative;
     top: 60px;
 }
 
@@ -264,12 +278,13 @@ img {
 }
 
 main #offers {
+    display: flex;
     width: 100%;
-    height: 90vh;
+    height: 250px;
     margin: 0;
     padding: 0;
-    position: absolute;
-    top: 100px;
+    /* position: relative;
+    top: 100px; */
     background-image: url(photo6.jpg);
     background-size: cover;
 }
@@ -277,9 +292,9 @@ main #offers {
 main #containor {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin-bottom: 15px;
     position: relative;
-    top: 270px;
+    /* top: -300px; */
     width: 100%;
 }
 
@@ -299,7 +314,6 @@ main #containor .con1 > div {
     background-color: white;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 main #containor .con1 .sub1 .off_head {
@@ -314,6 +328,7 @@ main #containor .con1 .sub1 .off_head_photos {
     flex-wrap: wrap;
     padding-left: 20px;
     column-gap: 15px;
+    flex-wrap: wrap;
 }
 
 main #containor .con1 .sub1 .off_head_photos img {
@@ -341,8 +356,8 @@ main #containor .con1 .sub1 .off_head_photos a:hover {
 }
 
 main .line_ads {
-    position: absolute;
-    top: 1270px;
+    /* position: relative; */
+    /* top: 1270px; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -418,15 +433,14 @@ main .line_ads .phones_containor .phones figure figcaption .phones_name {
 }
 
 main .line_ads2 {
-    position: absolute;
-    top: 1654px;
+    /* position: absolute;
+    top: 1654px; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 300px;
+    height: 100%;
     width: 96.8%;
     margin: 0 20px 20px 20px;
-    background-color: white;
 }
 
 main .line_ads2 .bike_heading {
@@ -449,23 +463,28 @@ main .line_ads2 .bike_heading a:hover {
     text-decoration: underline;
 }
 
-main .line_ads2 #bikes {
+main .line_ads2 #bikes_containor {
     display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-    justify-content: space-around;
+    width: 100%;
+    height: 100%;
 }
 
-main .line_ads2 #bikes div img {
+main .line_ads2 #bikes_containor #bikes {
+    flex-basis: 100%;
+    background-color: white;
+}
+
+main .line_ads2 #bikes_containor #bikes figure img {
     height: 100%;
+    position: relative;
 }
 
 main #back_to_top {
     width: 100%;
     background-color: #2f3e50;
     height: 50px;
-    position: absolute;
-    top: 2000px;
+    /* position: absolute;
+    top: 2000px; */
     text-align: center;
 }
 
@@ -487,8 +506,8 @@ footer {
  width: 100%;
  display: flex;
  flex-direction: column;
- position: absolute;
- top: 2050px;
+ /* position: absolute;
+ top: 2050px; */
  background-color: #232f3e;
  align-items: center;
 }
@@ -605,4 +624,9 @@ footer #foot_down #footer_country ul li:hover{
     main #containor .con1 .sub1 .off_head_photos {
         column-gap: 50px;
     }
+}
+
+@font-face {
+    font-family: Amazon-Ember;
+    src: url("/Amazon/AmazonEmber_Rg.ttf");
 }
